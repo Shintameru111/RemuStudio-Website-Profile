@@ -1,31 +1,17 @@
-# RemuStudio — Stage 1 Website Foundation
+# RemuStudio — Stage 1 refined
 
-A lightweight bilingual (English/Indonesian) company website prototype built with plain HTML, CSS, and JavaScript.
+Static bilingual company website for RemuStudio (website development and data-entry services).
 
 ## Run locally
+1. Extract the ZIP.
+2. Open this folder in VS Code.
+3. Open `index.html` in a browser, or use the Live Server extension.
 
-1. Extract the ZIP file.
-2. Open the `remustudio-stage1` folder in Visual Studio Code.
-3. Open `index.html` in your browser, or use the VS Code Live Server extension.
-4. Click `EN / ID` in the header to switch languages.
-5. Click `Client portal` to preview the client portal introduction modal.
+## Contact form email setup
+The contact form uses FormSubmit AJAX and sends inquiries to `kotaverse@gmail.com`. On the first real submission, FormSubmit sends an activation email to that inbox. Open it and confirm the activation before expecting future inquiries to arrive. Check spam/junk too. This static frontend does not expose an email password or SMTP credential.
 
-No build tools, package installation, or database are required for this stage.
-
-## Included
-
-- Responsive company landing page
-- Services, work concepts, about, and contact sections
-- English / Indonesian language toggle
-- Client Portal preview modal
-- Demo inquiry and portal notification interactions
-
-## Important limitations
-
-This is a front-end prototype only. The inquiry form does not send messages, and the Client Portal does not yet authenticate users, store files, or show real project data. Do not publish it as a production client portal until backend, authentication, validation, storage, and security have been implemented.
-
-## Files
-
-- `index.html` — page structure and content
-- `style.css` — visual design and responsive layout
-- `script.js` — language switching and demo interactions
+## Notes
+- The service dropdown uses a light option list for readable contrast on the dark contact panel.
+- Project cards open concept-detail dialogs. They are sample concepts, not live client projects.
+- The Client Portal is still a visual preview; real accounts, file uploads and project tracking require the next backend stage.
+- For production use, add server-side validation, spam protection, privacy policy and a backend rather than relying only on a static form endpoint.
