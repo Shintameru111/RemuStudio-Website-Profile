@@ -2,3 +2,23 @@
 @media(max-width:900px){.main-nav{gap:18px;margin-right:10px}.hero{min-height:540px}.hero h1{font-size:53px}.about-section{gap:50px}.contact-inner{gap:55px}}
 @media(max-width:700px){.section-wrap{width:calc(100% - 40px)}.announcement{font-size:9px}.site-header{width:calc(100% - 40px);height:70px}.brand{font-size:17px}.header-actions{gap:9px}.header-actions .button{font-size:10px;padding:10px}.language-switch{font-size:10px;padding:5px}.menu-toggle{display:flex;flex-direction:column;gap:5px;border:0;background:none;padding:8px;margin-left:auto}.menu-toggle span{width:21px;height:2px;background:#363247}.main-nav{display:none;position:absolute;z-index:10;top:104px;left:0;right:0;margin:0;padding:20px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 15px 25px #201b3810;flex-direction:column;align-items:flex-start;gap:17px}.main-nav.open{display:flex}.hero{display:flex;flex-direction:column;align-items:stretch;padding-top:38px;padding-bottom:65px}.hero-copy{padding:10px 0}.hero h1{font-size:clamp(42px,11vw,59px);letter-spacing:-2.8px}.hero-description{font-size:13px}.hero-art{height:330px;margin-top:5px}.browser-card{height:235px;width:78%}.browser-content{padding:16px 20px}.mini-panels{margin-top:14px}.mini-panels i{height:37px}.data-card{right:0;top:53px}.code-card{left:0;bottom:35px}.art-orbit.orbit-one{width:350px;height:205px}.art-orbit.orbit-two{width:320px;height:280px}.hero-bottom{bottom:16px}.trust-inner{padding-block:20px;display:grid;gap:13px}.trust-inner>div{gap:13px;flex-wrap:wrap;font-size:10px}.section-block{padding-top:75px;padding-bottom:78px}.section-heading{display:block;margin-bottom:30px}.section-heading h2,.about-copy h2{font-size:37px}.section-heading>p{margin-top:17px;max-width:440px}.service-grid,.work-grid{grid-template-columns:1fr}.service-card{min-height:405px;padding:21px}.service-illustration{height:160px}.work-visual{height:250px}.about-section{grid-template-columns:1fr;gap:35px}.about-visual{height:280px}.about-monogram{font-size:125px}.contact-section{padding:72px 0}.contact-inner{grid-template-columns:1fr;gap:35px}.contact-inner h2{font-size:54px}.footer-top{gap:15px;flex-wrap:wrap}.footer-top>p{order:3;width:100%}.footer-bottom{gap:10px;flex-wrap:wrap}.portal-modal{padding:27px}.hero-note{margin-top:32px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* RemuStudio identity and clickable portfolio cards */
+.brand-symbol{width:38px;height:38px;display:block;flex:0 0 auto;filter:drop-shadow(0 5px 10px #7861d833)}
+.portal-brand .brand-symbol{width:30px;height:30px}
+.project-open{display:block;width:100%;padding:0;border:0;background:transparent;text-align:left;color:inherit;cursor:pointer;border-radius:12px;transition:transform .22s,box-shadow .22s;appearance:none}
+.project-open:hover{transform:translateY(-5px);box-shadow:0 16px 35px #40356812}
+.project-open:focus-visible{outline:3px solid #9c89f0;outline-offset:5px}
+.project-open .work-visual{transition:filter .22s}
+.project-open:hover .work-visual{filter:saturate(1.08)}
+.project-hint{margin:16px 0 0;color:#7861d8;font-size:11px;font-weight:700}
+.project-modal{position:relative;width:min(650px,100%);max-height:min(88vh,760px);overflow:auto;background:#fff;border-radius:18px;padding:38px;color:var(--ink);box-shadow:0 25px 80px #100e1f44}
+.project-modal-eyebrow{font-size:9px;letter-spacing:.16em;font-weight:800;color:var(--purple);margin-bottom:13px}
+.project-modal h2{font:800 clamp(27px,5vw,38px)/1.15 var(--display);letter-spacing:-1.4px;margin:0 35px 12px 0}
+.project-modal>p{font-size:12px;line-height:1.9;color:var(--muted)}
+.project-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;background:#faf9fd;border:1px solid var(--line);border-radius:12px;padding:20px;margin:22px 0}
+.project-detail-grid span{font-size:9px;letter-spacing:.12em;font-weight:800;color:var(--purple)}
+.project-detail-grid p,.project-detail-grid li{font-size:11px;line-height:1.8;color:#6f6b80}
+.project-detail-grid p{margin:9px 0 0}.project-detail-grid ul{padding-left:17px;margin:9px 0 0}
+.project-modal-note{font-size:9px!important;color:#9b97a8!important;margin:15px 0 0}
+@media(max-width:700px){.project-modal{padding:28px 22px}.project-detail-grid{grid-template-columns:1fr;gap:14px}.project-hint{font-size:10px}}
